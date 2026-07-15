@@ -1,0 +1,36 @@
+services:
+  # FastAPI backend — retrieval + generation API
+  - type: web
+    name: intellirag-backend
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start_backend.sh
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false          # set manually in the Render dashboard (secret)
+      - key: LLM_MODEL
+        value: gpt-4o-mini
+      - key: EMBEDDING_MODEL
+        value: text-embedding-3-small
+      - key: CHROMA_DB_DIR
+        value: ./chroma_db
+      - key: WHOOSH_INDEX_DIR
+        value: ./whoosh_index
+      - key: CHROMA_COLLECTION
+        value: docs_demo
+      - key: INGEST_SOURCE
+        value: ./demo_corpus
+
+  # Streamlit frontend
+  - type: web
+    name: intellirag-frontend
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run src/streamlit_app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: BACKEND_API_URL
+        # Points at the backend service's public Render URL + the query route.
+        # Update this if you rename the backend service.
+        value: https://intellirag-backend.onrender.com/api/query

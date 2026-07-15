@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+
+# Virtual environment
+.venv/
+env/
+venv/
+*.env
+
+# Chroma vector DB
+chroma_db/
+
+# Whoosh keyword index
+whoosh_index/
+
+# Logs
+logs/
+*.log
+
+# Byte-compiled / cache
+*.pyc
+*.pyo
+*.pyd
+*.cache
+
+# IDE / Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.orig
+
+*.pdf

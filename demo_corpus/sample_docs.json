@@ -1,0 +1,52 @@
+[
+    {
+        "id": "doc1",
+        "title": "Intro to Transformers",
+        "text": "Transformers are deep learning models primarily used for NLP. They process sequences in parallel using self-attention, unlike RNNs which process sequentially. Transformers have become the foundation of large language models."
+    },
+    {
+        "id": "doc2",
+        "title": "Self-Attention Mechanism",
+        "text": "Self-attention allows a model to weigh the importance of each token in a sequence relative to others. This mechanism helps transformers understand context and relationships within text."
+    },
+    {
+        "id": "doc3",
+        "title": "RAG Systems",
+        "text": "Retrieval-Augmented Generation (RAG) systems combine a retriever model with a generator. The retriever fetches relevant documents, which the generator uses to produce informed responses. RAG improves accuracy in LLM outputs."
+    },
+    {
+        "id": "doc4",
+        "title": "LangChain Overview",
+        "text": "LangChain is a framework for building LLM applications. It supports prompt templates, chaining LLMs, and integrating with document retrieval systems. LangChain simplifies complex LLM workflows."
+    },
+    {
+        "id": "doc5",
+        "title": "OpenAI Embeddings",
+        "text": "'text-embedding-3-large' is an OpenAI embedding model that produces 3072-dimensional vectors. These embeddings capture semantic information from text and are used for tasks like semantic search or clustering."
+    },
+    {
+        "id": "doc6",
+        "title": "MCP Protocol Overview",
+        "text": "MCP is a network communication protocol designed for secure and reliable message passing between distributed systems. It emphasizes low-latency delivery and fault tolerance."
+    },
+    {
+        "id": "doc7",
+        "title": "Prompt Templates",
+        "text": "Prompt templates in LangChain allow you to define reusable patterns for queries to LLMs. Templates help standardize prompts and dynamically insert variables for different tasks."
+    },
+    {
+        "id": "doc8",
+        "title": "LLM Chains",
+        "text": "LLM chains are sequences of steps combining multiple LLM calls or retrieval processes. Chains can include logic like conditional branching, data transformation, and multi-step reasoning."
+    },
+    {
+        "id": "doc9",
+        "title": "Embedding Usage in Retrieval",
+        "text": "Embeddings map text to high-dimensional vectors. In RAG pipelines, the retriever searches the embedding space to find relevant documents that match the semantic meaning of a query."
+    },
+    {
+        "id": "doc10",
+        "title": "Chunking for RAG",
+        "text": "Chunking splits documents into smaller overlapping pieces. Overlaps ensure context is preserved, which improves retrieval quality and relevance in RAG pipelines."
+    }
+]
