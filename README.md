@@ -57,7 +57,7 @@ How it works:
 ## 4. Installation
 
 ```bash
-git clone https://github.com/divij-pawar/IntelliRAG.git
+git clone http://github.com/syedjawadulhassan/IntelliRAG)
 cd IntelliRAG
 python -m venv .venv
 source .venv/bin/activate
@@ -142,7 +142,7 @@ git init
 git add .
 git commit -m "Initial commit: IntelliRAG"
 git branch -M main
-git remote add origin https://github.com/<your-username>/IntelliRAG.git
+git remote add origin http://github.com/syedjawadulhassan/IntelliRAG)
 git push -u origin main
 ```
 
@@ -168,4 +168,4 @@ Steps:
 
 ## 10. License
 
-MIT License © 2025 IntelliRAG
+MIT License © 2026 IntelliRAG
